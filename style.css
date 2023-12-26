@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 756px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 300px;
+    padding-left: 300px;
+}
+
+html, body{
+    height: 100%;
+    background-color: white;
+    font-family: "Inter";
+}
+
+.dark{
+    background-color: black;
+    transition: all 0.2s ease-out;
+    width: 1500px;
+    height: 1000px;
+}
+
+.light{
+    background-color: white;
+    transition: all 0.2s ease-out;
+    width: 1500px;
+    height: 1000px;
+}

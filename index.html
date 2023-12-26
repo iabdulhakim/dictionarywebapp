@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="./tailwind.js"></script>
+    <title>Ashraf | Dictionary Web App</title>
+</head>
+<body class="h-full">
+    <header class="header-container container">
+        <div class=" flex items-center pt-14">
+            <a href="./index.html" class="sitelogo mr-[350px]">
+                <img src="./Pictures/book-logo.svg" alt="logo" class="sitelogo_img">
+            </a>
+            <select class="select join-item rounded-none sm:text-[18px] text-[2px] font-bold ml-auto bg-white text-black ">
+                <option>Sans Serif</option>
+                <option>Serif</option>
+                <option>Mono</option>
+            </select>
+            <div class="flex items-center gap-4 ml-auto">
+                <input type="checkbox" class="toggle active:[--tglbg:purple] [--tglbg:gray] bg-white hover:bg-gray border-none" checked />
+                <img src="./Pictures/moon.svg" id="dark-m" alt="" height="25px" width="25px" class="cursor-pointer">
+        </div>
+    </header>
+    <main>
+        <section class="search-container container mt-[50px]">
+            <div class="search-wrapper flex items-center justify-between bg-gray-100 rounded-lg p-0 active:border-[#A445ED] pr-[20px]">
+                <input class="bg-transparent font-semibold text-black w-full placeholder:text-black text-[20px] border-none  pl-[20px] pt-[10px] pb-[10px] " type="text" placeholder="keyboard">
+                <img src="./Pictures/search-icon.svg" height="20px" width="20px" alt="" class="cursor-pointer">
+            </div>
+        </section>
+        <section class="word-container container mt-[45px] ">
+            <div class="word-wrapper flex items-center justify-between">
+                <div class="word-content">
+                    <h1 class="text-black text-[64px] font-bold">keyboard</h1>
+                    <p class="text-[#A445ED] text-[24px]">/ˈkiːbɔːd/</p>
+                </div>
+                <img src="./Pictures/player-pause.svg" alt="" class="opacity-40 cursor-pointer active:opacity-100">
+            </div>
+            
+        </section>
+        <section class="noun-container container mt-9 mb-0">
+            <div class="noun-wrapper">
+                <div class="flex items-center gap-5">
+                    <h3 class="text-black font-bold italic">noun</h3>
+                    <img src="./Pictures/line.svg" alt="" class="w-11/12">
+                </div>
+                <ul class="list-disc">
+                    <h2 class="text-[20px] mr-auto mt-10 mb-6 text-[#757575]">Meaning</h2>
+                    <li class="text-black text-[18px] mb-2 ml-10">(etc.) A set of keys used to operate a typewriter, computer etc.</li>
+                    <li class="text-black text-[18px] mb-2 ml-10">A component of many instruments including the piano, organ, and harpsichord consisting of usually black and white keys that cause different tones to be produced when struck.</li>
+                    <li class="text-black text-[18px] ml-10">A device with keys of a musical keyboard, used to control electronic sound-producing devices which may be built into or separate from the keyboard device.</li>
+                </ul>
+                <p class="text-[#757575] mt-[64px] text-[20px]">Synonyms <span class="text-[#A445ED] font-bold active:underline ml-3"><a href="">electronic keyboard</a></span></p>
+            </div>
+        </section>
+        <section class="verb-container container mt-10 mb-10">
+            <div class="verb-wrapper">
+                <div class="flex items-center gap-5">
+                    <h3 class="text-black font-bold italic">verb</h3>
+                    <img src="./Pictures/line.svg" alt="" class="w-11/12">
+                </div>
+                <ul class="list-disc">
+                    <h2 class="text-[20px] mr-auto mt-10 mb-6 text-[#757575]">Meaning</h2>
+                    <li class="text-black text-[18px] mb-2 ml-10">To type on a computer keyboard.</li>
+                    <p class="text-[#757575] ml-10">“Keyboarding is the part of this job I hate the most.”</p>
+                </ul>
+                <img src="./Pictures/line.svg" alt="" class="w-full mt-10">
+                <p class="text-[#757575] mt-[64px] text-[20px] underline underline-offset-2">Source <span class="text-black ml-5 active:text-[#A445ED]"><a href="">https://en.wiktionary.org/wiki/keyboard</a></span></p>
+            </div>
+        </section>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
